@@ -34,13 +34,13 @@ const PORT = process.env.PORT || 3000;
 //     res.send('Hello World! This is the contact page');
 // });
 
-app.get('/signin', (req, res) => {
-    res.send('Hello World! This is the signin page');
-});
+// app.get('/signin', (req, res) => {
+//     res.send('Hello World! This is the signin page');
+// });
 
-app.get('/signup', (req, res) => {
-    res.send('Hello World! This is the registration/signup page');
-});
+// app.get('/signup', (req, res) => {
+//     res.send('Hello World! This is the registration/signup page');
+// });
 
 if (process.env.NODE_ENV == "production"){
   app.use(express.static("client/build"));
